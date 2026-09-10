@@ -10,7 +10,7 @@
   var T = {
     fr: {
       _title: 'Lona Dotcom — Data Analyst freelance | Appelez-moi',
-      nav_services: 'Services', nav_stack: 'Stack', nav_method: 'Méthode', nav_about: 'Qui je suis', about_eyebrow: 'À propos',
+      nav_services: 'Services', nav_stack: 'Stack', nav_method: 'Méthode', nav_about: 'Qui je suis', nav_contact: 'Contact', about_eyebrow: 'À propos',
       cta_short: 'Appeler', cta_mail: 'Écrire un message',
       hero_l1: 'Vos chiffres savent déjà quoi faire.',
       hero_l2: 'Reste à les faire parler.',
@@ -58,7 +58,7 @@
       note_3: 'Je travaille en télétravail complet, partout dans le monde.',
       note_4: 'NDA et contrat signés avant tout accès à vos données.',
       contact_eyebrow: 'CONTACTS', contact_whatsapp: 'Écrire directement', contact_email: 'Envoyer un message', contact_location: 'UTC+3 · Télétravail mondial', contact_linkedin: 'Voir mon profil', contact_x: 'Suivre mes actualités', contact_facebook: 'Me retrouver en ligne', contact_github: 'Voir mes projets', contact_upwork: 'Collaborer avec moi',
-      final_title: 'Quinze minutes au téléphone, et vous saurez si je peux vous aider.',
+      final_title: 'Prêt à donner du sens à vos données ? N\'hésitez pas à me contacter via le canal de votre choix ci-dessous. Je vous répondrai sous 24h.',
       final_note: 'Je décroche de 8 h à 20 h, heure de Madagascar (UTC+3). Si je suis en mission, je rappelle le jour même.',
       foot_role: 'Data Analyst freelance — Tamatave, Madagascar',
       foot_meta: 'Site conçu et écrit par mes soins.',
@@ -67,7 +67,7 @@
 
     en: {
       _title: 'Lona Dotcom — Freelance Data Analyst | Call me',
-      nav_services: 'Services', nav_stack: 'Stack', nav_method: 'How it works', nav_about: 'About me', about_eyebrow: 'About',
+      nav_services: 'Services', nav_stack: 'Stack', nav_method: 'How it works', nav_about: 'About me', nav_contact: 'Contact', about_eyebrow: 'About',
       cta_short: 'Call', cta_mail: 'Send a message',
       hero_l1: 'Your numbers already know what to do.',
       hero_l2: 'They just need someone to read them.',
@@ -115,7 +115,7 @@
       note_3: 'I work fully remotely, anywhere in the world.',
       note_4: 'NDA and contract signed before any access to your data.',
       contact_eyebrow: 'CONTACT', contact_whatsapp: 'Write directly', contact_email: 'Send a message', contact_location: 'UTC+3 · Worldwide remote', contact_linkedin: 'View my profile', contact_x: 'Follow my updates', contact_facebook: 'Find me online', contact_github: 'View my projects', contact_upwork: 'Work with me',
-      final_title: 'Fifteen minutes on the phone and you will know whether I can help.',
+      final_title: 'Ready to make sense of your data? Feel free to contact me through the channel of your choice below. I will reply within 24 hours.',
       final_note: 'I answer between 8am and 8pm Madagascar time (UTC+3). If I am on a job, I call back the same day.',
       foot_role: 'Freelance Data Analyst — Tamatave, Madagascar',
       foot_meta: 'Site designed and written by me.',
@@ -124,7 +124,7 @@
 
     de: {
       _title: 'Lona Dotcom — Freiberuflicher Datenanalyst | Rufen Sie mich an',
-      nav_services: 'Leistungen', nav_stack: 'Stack', nav_method: 'Ablauf', nav_about: 'Über mich', about_eyebrow: 'Über mich',
+      nav_services: 'Leistungen', nav_stack: 'Stack', nav_method: 'Ablauf', nav_about: 'Über mich', nav_contact: 'Kontakt', about_eyebrow: 'Über mich',
       cta_short: 'Anrufen', cta_mail: 'Nachricht schreiben',
       hero_l1: 'Ihre Zahlen wissen längst, was zu tun ist.',
       hero_l2: 'Man muss sie nur lesen können.',
@@ -172,7 +172,7 @@
       note_3: 'Ich arbeite vollständig remote, weltweit.',
       note_4: 'NDA und Vertrag vor jedem Zugriff auf Ihre Daten.',
       contact_eyebrow: 'KONTAKT', contact_whatsapp: 'Direkt schreiben', contact_email: 'Nachricht senden', contact_location: 'UTC+3 · Weltweit remote', contact_linkedin: 'Profil ansehen', contact_x: 'Updates verfolgen', contact_facebook: 'Online finden', contact_github: 'Projekte ansehen', contact_upwork: 'Zusammenarbeiten',
-      final_title: 'Fünfzehn Minuten am Telefon, und Sie wissen, ob ich helfen kann.',
+      final_title: 'Bereit, Ihren Daten einen Sinn zu geben? Kontaktieren Sie mich gerne über den unten aufgeführten Kanal Ihrer Wahl. Ich antworte innerhalb von 24 Stunden.',
       final_note: 'Erreichbar von 8 bis 20 Uhr madagassischer Zeit (UTC+3). Bin ich im Einsatz, rufe ich am selben Tag zurück.',
       foot_role: 'Freiberuflicher Datenanalyst — Tamatave, Madagaskar',
       foot_meta: 'Website von mir gestaltet und getextet.',
