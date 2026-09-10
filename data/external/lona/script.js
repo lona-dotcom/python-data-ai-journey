@@ -61,6 +61,7 @@
       final_title: 'Prêt à donner du sens à vos données ? N\'hésitez pas à me contacter via le canal de votre choix ci-dessous. Je vous répondrai sous 24h.',
       final_note: 'Je décroche de 8 h à 20 h, heure de Madagascar (UTC+3). Si je suis en mission, je rappelle le jour même.',
       foot_role: 'Data Analyst freelance — Tamatave, Madagascar',
+      footer_social: 'Réseaux sociaux',
       foot_meta: 'Site conçu et écrit par mes soins.',
       bar_a: 'Appelez-moi', bar_b: '15 min, sans engagement'
     },
@@ -118,6 +119,7 @@
       final_title: 'Ready to make sense of your data? Feel free to contact me through the channel of your choice below. I will reply within 24 hours.',
       final_note: 'I answer between 8am and 8pm Madagascar time (UTC+3). If I am on a job, I call back the same day.',
       foot_role: 'Freelance Data Analyst — Tamatave, Madagascar',
+      footer_social: 'Social networks',
       foot_meta: 'Site designed and written by me.',
       bar_a: 'Call me', bar_b: '15 min, no strings'
     },
@@ -175,6 +177,7 @@
       final_title: 'Bereit, Ihren Daten einen Sinn zu geben? Kontaktieren Sie mich gerne über den unten aufgeführten Kanal Ihrer Wahl. Ich antworte innerhalb von 24 Stunden.',
       final_note: 'Erreichbar von 8 bis 20 Uhr madagassischer Zeit (UTC+3). Bin ich im Einsatz, rufe ich am selben Tag zurück.',
       foot_role: 'Freiberuflicher Datenanalyst — Tamatave, Madagaskar',
+      footer_social: 'Soziale Netzwerke',
       foot_meta: 'Website von mir gestaltet und getextet.',
       bar_a: 'Rufen Sie mich an', bar_b: '15 Min., unverbindlich'
     }
