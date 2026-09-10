@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<!--
+  ═══════════════════════════════════════════════════════════════════
+   NUMERO DE TELEPHONE — A REMPLACER AVANT MISE EN LIGNE
+  ═══════════════════════════════════════════════════════════════════
+   Le placeholder +261 34 00 000 00 apparait a 6 endroits, chacun
+   signale par la ligne « TEL » juste au-dessus : barre du haut,
+   heros, bloc d appel, barre mobile, WhatsApp, JSON-LD.
+
+   Pour tout remplacer d un coup, depuis ce dossier :
+
+     sed -i "" "s/+261 34 00 000 00/VOTRE NUMERO AFFICHE/g" index.html
+     sed -i "" "s/+261340000000/+261XXXXXXXXX/g" index.html
+     sed -i "" "s#wa.me/261340000000#wa.me/261XXXXXXXXX#g" index.html
+
+   Format affiche : espaces pour la lisibilite.
+   Format tel: et wa.me : international, sans espace.
+  ═══════════════════════════════════════════════════════════════════
+-->
+
+<title>Lona Dotcom — Data Analyst freelance | Appelez-moi</title>
+<meta name="description" content="Data Analyst freelance à Tamatave, Madagascar. Je nettoie vos données et je livre des tableaux de bord sur lesquels vous décidez. Appel de 15 minutes, sans engagement." />
+<meta name="author" content="Lovatahiana Razanakoto" />
+<meta name="theme-color" content="#0B1D24" />
+
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Lona Dotcom — Data Analyst freelance" />
+<meta property="og:description" content="Vos chiffres savent déjà quoi faire. Reste à les faire parler. Appel de 15 minutes, sans engagement." />
+<meta property="og:image" content="assets/lona.jpeg" />
+<meta property="og:locale" content="fr_FR" />
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230B1D24'/%3E%3Cpath d='M6 22 L12 16 L18 19 L26 9' fill='none' stroke='%23FFB84D' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&display=swap" rel="stylesheet" />
+
+<link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+<a class="skip" href="#main">Aller au contenu</a>
+
+<!-- ═══ BARRE DU HAUT ═══ -->
+<header class="topbar" id="top">
+  <div class="topbar__in">
+    <a class="wordmark" href="#top">Lona<span>Dotcom</span></a>
+
+    <nav class="topnav" aria-label="Sections">
+      <a href="#services" data-i18n="nav_services">Services</a>
+      <a href="#methode" data-i18n="nav_method">Méthode</a>
+      <a href="#apropos" data-i18n="nav_about">Qui je suis</a>
+    </nav>
+
+    <div class="topbar__end">
+      <div class="lang" role="group" aria-label="Langue">
+        <button type="button" data-lang="fr" aria-pressed="true">FR</button>
+        <button type="button" data-lang="en" aria-pressed="false">EN</button>
+        <button type="button" data-lang="de" aria-pressed="false">DE</button>
+      </div>
+      <!-- TEL -->
+      <a class="btn btn--call btn--sm" href="tel:+261340000000">
+        <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 3.5h3.2l1.6 4-2 1.4a12.5 12.5 0 0 0 5.8 5.8l1.4-2 4 1.6v3.2a1.5 1.5 0 0 1-1.7 1.5C9.6 18.3 5.7 14.4 3 6.7a1.5 1.5 0 0 1 1.5-3.2Z"/></svg>
+        <span data-i18n="cta_short">Appeler</span>
+        <span class="btn__num">+261 34 00 000 00</span>
+      </a>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ═══ HÉROS ═══ -->
+  <section class="rail hero">
+    <div class="rail__mark" aria-hidden="true"></div>
+    <div class="rail__body hero__grid">
+
+      <div class="hero__text">
+        <h1 class="hero__title">
+          <span data-i18n="hero_l1">Vos chiffres savent déjà quoi faire.</span>
+          <span class="tail" data-i18n="hero_l2">Reste à les faire parler.</span>
+        </h1>
+
+        <p class="lead" data-i18n="hero_lead">
+          Data Analyst freelance. Je récupère vos données là où elles dorment, je les nettoie,
+          et je vous rends un tableau de bord sur lequel vous décidez le matin même.
+        </p>
+
+        <div class="phone">
+          <p class="phone__kicker" data-i18n="phone_kicker">Le plus rapide, c’est de m’appeler.</p>
+          <!-- TEL -->
+          <a class="phone__num" href="tel:+261340000000" aria-label="Appeler le +261 34 00 000 00">
+            <svg class="ico ico--lg" viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 3.5h3.2l1.6 4-2 1.4a12.5 12.5 0 0 0 5.8 5.8l1.4-2 4 1.6v3.2a1.5 1.5 0 0 1-1.7 1.5C9.6 18.3 5.7 14.4 3 6.7a1.5 1.5 0 0 1 1.5-3.2Z"/></svg>
+            <span>+261 34 00 000 00</span>
+          </a>
+          <p class="phone__note" data-i18n="phone_note">
+            Quinze minutes, sans engagement. Si je ne décroche pas, je rappelle dans la journée.
+          </p>
+
+          <div class="alt">
+            <!-- TEL -->
+            <a class="btn btn--ghost" href="https://wa.me/261340000000" target="_blank" rel="noopener">
+              <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-1.7-.1a13 13 0 0 1-6.9-6c-.5-.9-.8-1.8-.8-2.6 0-.9.5-1.4.9-1.8.2-.2.4-.3.7-.3h.5c.2 0 .4 0 .6.4l.8 2c.1.2 0 .4-.1.6l-.4.5c-.2.2-.3.3-.1.6a9 9 0 0 0 3.7 3.2c.3.1.5.1.6 0l.8-1c.2-.2.4-.2.6-.1l2 .9c.2.1.4.2.4.4s0 .8-.2 1.1Z"/></svg>
+              WhatsApp
+            </a>
+            <a class="btn btn--ghost" href="mailto:lonaloraz@gmail.com?subject=Projet%20data">
+              <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5.5h18v13H3z" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="m3.6 6.2 8.4 6.3 8.4-6.3" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>
+              <span data-i18n="cta_mail">Écrire un message</span>
+            </a>
+          </div>
+        </div>
+
+        <p class="status">
+          <span class="dot" aria-hidden="true"></span>
+          <span data-i18n="status">Disponible pour de nouveaux projets — Tamatave (UTC+3), je décroche de 8 h à 20 h.</span>
+        </p>
+      </div>
+
+      <figure class="hero__portrait">
+        <img src="assets/lona.jpeg" alt="Portrait de Lovatahiana Razanakoto, Data Analyst freelance" width="960" height="1280" />
+        <figcaption>
+          <strong>Lovatahiana Razanakoto</strong>
+          <span data-i18n="portrait_cap">Data Analyst freelance, Tamatave, Madagascar</span>
+        </figcaption>
+      </figure>
+
+    </div>
+  </section>
+
+  <!-- ═══ REPÈRES ═══ -->
+  <section class="rail facts">
+    <div class="rail__mark" aria-hidden="true"></div>
+    <div class="rail__body">
+      <dl class="facts__grid">
+        <div class="fact">
+          <dt class="fact__n">24 h</dt>
+          <dd data-i18n="fact_1">Je réponds à toute demande sous vingt-quatre heures, week-end compris.</dd>
+        </div>
+        <div class="fact">
+          <dt class="fact__n">2024</dt>
+          <dd data-i18n="fact_2">En freelance depuis 2024, après deux ans passés dans la donnée.</dd>
+        </div>
+        <div class="fact">
+          <dt class="fact__n">3</dt>
+          <dd data-i18n="fact_3">Langues de travail : français, anglais et allemand.</dd>
+        </div>
+        <div class="fact">
+          <dt class="fact__n">UTC+3</dt>
+          <dd data-i18n="fact_4">Une à deux heures d’avance sur Paris : je travaille avec l’Europe tous les jours.</dd>
+        </div>
+      </dl>
+    </div>
+  </section>
+
+  <!-- ═══ SERVICES ═══ -->
+  <section class="rail work" id="services">
+    <div class="rail__mark" aria-hidden="true"></div>
+    <div class="rail__body">
+      <h2 class="h2" data-i18n="work_title">Ce que je fais pour vous, concrètement</h2>
+      <p class="section-lead" data-i18n="work_lead">
+        Six façons d’attaquer le problème. La plupart des missions en combinent deux ou trois.
+      </p>
+
+      <div class="panels">
+
+        <article class="panel panel--lead">
+          <svg class="glyph" viewBox="0 0 40 40" aria-hidden="true">
+            <path d="M6 32h28M8 32V20M16 32V12M24 32V24M32 32V8" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/>
+          </svg>
+          <h3 data-i18n="svc1_t">Des tableaux de bord où l’on voit tout de suite quoi faire</h3>
+          <p data-i18n="svc1_d">
+            Vos données brutes deviennent trois ou quatre écrans lisibles. Pas une galerie de graphiques :
+            les chiffres qui déclenchent une décision, mis en avant, et le reste à un clic.
+          </p>
+          <ul class="chips">
+            <li>Power BI</li><li>Tableau</li><li>Looker Studio</li><li>Excel</li>
+          </ul>
+        </article>
+
+        <article class="panel panel--lead">
+          <svg class="glyph" viewBox="0 0 40 40" aria-hidden="true">
+            <path d="M8 11c0-2.2 5.4-4 12-4s12 1.8 12 4-5.4 4-12 4-12-1.8-12-4Z" fill="none" stroke="currentColor" stroke-width="2.4"/>
+            <path d="M8 11v18c0 2.2 5.4 4 12 4s12-1.8 12-4V11M8 20c0 2.2 5.4 4 12 4s12-1.8 12-4" fill="none" stroke="currentColor" stroke-width="2.4"/>
+          </svg>
+          <h3 data-i18n="svc2_t">Des données propres et à jour, chaque matin</h3>
+          <p data-i18n="svc2_d">
+            J’automatise la collecte et le nettoyage : plus d’export manuel, plus de fichier « final_v3 ».
+            Les chiffres du lundi matin sont justes sans que personne n’y touche.
+          </p>
+          <ul class="chips">
+            <li>Python</li><li>SQL</li><li>Airflow</li><li>dbt</li>
+          </ul>
+        </article>
+
+        <article class="panel">
+          <h3 data-i18n="svc3_t">Prévoir, plutôt que constater</h3>
+          <p data-i18n="svc3_d">Modèles de prévision des ventes, de la demande ou du churn — avec une marge d’erreur annoncée honnêtement.</p>
+          <ul class="chips"><li>Scikit-learn</li><li>XGBoost</li><li>Statsmodels</li></ul>
+        </article>
+
+        <article class="panel">
+          <h3 data-i18n="svc4_t">Une base data qui tient la charge</h3>
+          <p data-i18n="svc4_d">Bases, API et entrepôt connectés proprement, pour que le système suive quand votre activité double.</p>
+          <ul class="chips"><li>PostgreSQL</li><li>API REST</li><li>Data warehouse</li></ul>
+        </article>
+
+        <article class="panel">
+          <h3 data-i18n="svc5_t">Vos données restent les vôtres</h3>
+          <p data-i18n="svc5_d">Accès cloisonnés, sauvegardes vérifiées, traitement conforme au RGPD. Contrat et NDA signés avant le premier accès.</p>
+          <ul class="chips"><li>RGPD</li><li>Gouvernance</li><li>Sauvegardes</li></ul>
+        </article>
+
+        <article class="panel">
+          <h3 data-i18n="svc6_t">Un seul interlocuteur, du premier appel à la livraison</h3>
+          <p data-i18n="svc6_d">Pas d’intermédiaire, pas de sous-traitance. Documentation écrite et prise en main de vos équipes incluses.</p>
+          <ul class="chips"><li>Documentation</li><li>Formation</li><li>Support</li></ul>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ MÉTHODE (vraie séquence → donc numérotée) ═══ -->
+  <section class="rail method" id="methode">
+    <div class="rail__mark" aria-hidden="true"></div>
+    <div class="rail__body">
+      <h2 class="h2" data-i18n="method_title">Comment ça se passe</h2>
+
+      <ol class="steps">
+        <li class="step">
+          <span class="step__n" aria-hidden="true">1</span>
+          <h3 data-i18n="step1_t">Vous m’appelez</h3>
+          <p data-i18n="step1_d">
+            Quinze minutes au téléphone. Vous décrivez le problème avec vos mots, je pose les questions
+            qui manquent. Sans jargon, et sans rien à préparer.
+          </p>
+          <!-- TEL -->
+          <a class="step__call" href="tel:+261340000000">
+            <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 3.5h3.2l1.6 4-2 1.4a12.5 12.5 0 0 0 5.8 5.8l1.4-2 4 1.6v3.2a1.5 1.5 0 0 1-1.7 1.5C9.6 18.3 5.7 14.4 3 6.7a1.5 1.5 0 0 1 1.5-3.2Z"/></svg>
+            +261 34 00 000 00
+          </a>
+        </li>
+        <li class="step">
+          <span class="step__n" aria-hidden="true">2</span>
+          <h3 data-i18n="step2_t">Je vous cadre le travail</h3>
+          <p data-i18n="step2_d">
+            Sous vingt-quatre heures, vous recevez par écrit le périmètre, le délai et le prix.
+            Vous décidez ensuite — ce cadrage ne vous engage à rien.
+          </p>
+        </li>
+        <li class="step">
+          <span class="step__n" aria-hidden="true">3</span>
+          <h3 data-i18n="step3_t">Je livre par étapes</h3>
+          <p data-i18n="step3_d">
+            Une livraison tous les sept jours. Vous voyez le tableau de bord se construire et vous
+            corrigez le tir en cours de route, pas à la fin.
+          </p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ═══ À PROPOS ═══ -->
+  <section class="rail about" id="apropos">
+    <div class="rail__mark" aria-hidden="true"></div>
+    <div class="rail__body about__grid">
+      <div>
+        <h2 class="h2" data-i18n="about_title">Qui vous aurez au bout du fil</h2>
+        <p data-i18n="about_p1">
+          Je m’appelle Lovatahiana Razanakoto — Lona. Data Analyst freelance depuis 2024, je travaille
+          depuis Tamatave, sur la côte est de Madagascar, avec des clients en France, en Allemagne
+          et au Royaume-Uni.
+        </p>
+        <p data-i18n="about_p2">
+          Je prends la donnée du début à la fin : la collecte, le nettoyage, l’analyse exploratoire,
+          la modélisation, le tableau de bord, puis la prise en main par l’équipe qui s’en servira.
+          Mes outils quotidiens sont Python, SQL, PostgreSQL, Power BI, Tableau et Excel.
+        </p>
+        <blockquote class="quote">
+          <p data-i18n="quote">Les données ne sont que des reflets de la réalité. À vous de les interpréter pour créer de la valeur.</p>
+        </blockquote>
+      </div>
+      <aside class="card-note">
+        <h3 data-i18n="note_title">Bon à savoir avant d’appeler</h3>
+        <ul>
+          <li data-i18n="note_1">Le premier appel est gratuit et sans engagement.</li>
+          <li data-i18n="note_2">Vous pouvez me parler en français, en anglais ou en allemand.</li>
+          <li data-i18n="note_3">Je travaille en télétravail complet, partout dans le monde.</li>
+          <li data-i18n="note_4">NDA et contrat signés avant tout accès à vos données.</li>
+        </ul>
+      </aside>
+    </div>
+  </section>
+
+  <!-- ═══ APPEL FINAL — le rail s'arrête ici, exprès ═══ -->
+  <section class="callout" id="contact">
+    <div class="callout__in">
+      <h2 class="callout__title" data-i18n="final_title">
+        Quinze minutes au téléphone, et vous saurez si je peux vous aider.
+      </h2>
+      <!-- TEL -->
+      <a class="callout__num" href="tel:+261340000000" aria-label="Appeler le +261 34 00 000 00">
+        <svg class="ico ico--lg" viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 3.5h3.2l1.6 4-2 1.4a12.5 12.5 0 0 0 5.8 5.8l1.4-2 4 1.6v3.2a1.5 1.5 0 0 1-1.7 1.5C9.6 18.3 5.7 14.4 3 6.7a1.5 1.5 0 0 1 1.5-3.2Z"/></svg>
+        <span>+261 34 00 000 00</span>
+      </a>
+      <p class="callout__note" data-i18n="final_note">
+        Je décroche de 8 h à 20 h, heure de Madagascar (UTC+3). Si je suis en mission, je rappelle le jour même.
+      </p>
+      <div class="callout__alt">
+        <!-- TEL -->
+        <a class="btn btn--dark" href="https://wa.me/261340000000" target="_blank" rel="noopener">WhatsApp</a>
+        <a class="btn btn--dark" href="mailto:lonaloraz@gmail.com?subject=Projet%20data">lonaloraz@gmail.com</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ═══ PIED DE PAGE ═══ -->
+<footer class="foot">
+  <div class="foot__in">
+    <p class="foot__id">
+      <strong>Lovatahiana Razanakoto</strong><br />
+      <span data-i18n="foot_role">Data Analyst freelance — Tamatave, Madagascar</span>
+    </p>
+    <nav class="foot__links" aria-label="Ailleurs sur le web">
+      <a href="https://github.com/lona-dotcom" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.linkedin.com/in/razanakoto-lovatahiana-nomenjanahary-4060aa2a6/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://x.com/lonaloraz" target="_blank" rel="noopener">X</a>
+      <a href="https://www.facebook.com/profile.php?id=61570971295771" target="_blank" rel="noopener">Facebook</a>
+      <!-- TODO : remplacer par la vraie URL du profil Upwork (l'ancienne page pointait vers href="#") -->
+      <a href="https://www.upwork.com/" target="_blank" rel="noopener">Upwork</a>
+    </nav>
+    <p class="foot__meta">© <span id="year">2026</span> — <span data-i18n="foot_meta">Site conçu et écrit par mes soins.</span></p>
+  </div>
+</footer>
+
+<!-- ═══ BARRE D'APPEL MOBILE ═══ -->
+<!-- TEL -->
+<a class="callbar" href="tel:+261340000000">
+  <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 3.5h3.2l1.6 4-2 1.4a12.5 12.5 0 0 0 5.8 5.8l1.4-2 4 1.6v3.2a1.5 1.5 0 0 1-1.7 1.5C9.6 18.3 5.7 14.4 3 6.7a1.5 1.5 0 0 1 1.5-3.2Z"/></svg>
+  <span><strong data-i18n="bar_a">Appelez-moi</strong> <em data-i18n="bar_b">15 min, sans engagement</em></span>
+</a>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Lona Dotcom — Data Analyst freelance",
+  "description": "Data Analyst freelance : nettoyage de données, pipelines automatisés, tableaux de bord Power BI et Tableau, modèles prédictifs.",
+  "telephone": "+261340000000",
+  "email": "lonaloraz@gmail.com",
+  "url": "https://lona-dotcom-github-io.vercel.app/",
+  "image": "assets/lona.jpeg",
+  "areaServed": "Worldwide",
+  "availableLanguage": ["fr", "en", "de"],
+  "address": { "@type": "PostalAddress", "addressLocality": "Toamasina", "addressRegion": "Atsinanana", "addressCountry": "MG" },
+  "founder": { "@type": "Person", "name": "Lovatahiana Razanakoto" }
+}
+</script>
+
+<script src="script.js"></script>
+</body>
+</html>
