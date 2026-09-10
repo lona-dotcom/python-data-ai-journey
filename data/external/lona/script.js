@@ -10,7 +10,7 @@
   var T = {
     fr: {
       _title: 'Lona Dotcom — Data Analyst freelance | Appelez-moi',
-      nav_services: 'Services', nav_method: 'Méthode', nav_about: 'Qui je suis',
+      nav_services: 'Services', nav_stack: 'Stack', nav_method: 'Méthode', nav_about: 'Qui je suis',
       cta_short: 'Appeler', cta_mail: 'Écrire un message',
       hero_l1: 'Vos chiffres savent déjà quoi faire.',
       hero_l2: 'Reste à les faire parler.',
@@ -25,6 +25,10 @@
       fact_4: 'Une à deux heures d’avance sur Paris : je travaille avec l’Europe tous les jours.',
       work_title: 'Ce que je fais pour vous, concrètement',
       work_lead: 'Six façons d’attaquer le problème. La plupart des missions en combinent deux ou trois.',
+      stack_eyebrow: 'Mon environnement de travail',
+      stack_title: 'Une boîte à outils pensée pour passer de la donnée à la décision.',
+      stack_lead: 'Des outils complémentaires, choisis pour produire des analyses fiables, reproductibles et faciles à transmettre.',
+      stack_env_title: 'Environnement', stack_tools_title: 'Outils data', stack_system_title: 'Système',
       svc1_t: 'Des tableaux de bord où l’on voit tout de suite quoi faire',
       svc1_d: 'Vos données brutes deviennent trois ou quatre écrans lisibles. Pas une galerie de graphiques : les chiffres qui déclenchent une décision, mis en avant, et le reste à un clic.',
       svc2_t: 'Des données propres et à jour, chaque matin',
@@ -62,7 +66,7 @@
 
     en: {
       _title: 'Lona Dotcom — Freelance Data Analyst | Call me',
-      nav_services: 'Services', nav_method: 'How it works', nav_about: 'About me',
+      nav_services: 'Services', nav_stack: 'Stack', nav_method: 'How it works', nav_about: 'About me',
       cta_short: 'Call', cta_mail: 'Send a message',
       hero_l1: 'Your numbers already know what to do.',
       hero_l2: 'They just need someone to read them.',
@@ -77,6 +81,10 @@
       fact_4: 'One to two hours ahead of Paris: I work with Europe every day.',
       work_title: 'What I actually do for you',
       work_lead: 'Six ways into the problem. Most projects combine two or three of them.',
+      stack_eyebrow: 'My work environment',
+      stack_title: 'A toolkit built to turn data into decisions.',
+      stack_lead: 'Complementary tools chosen to produce reliable, reproducible analysis that is easy to hand over.',
+      stack_env_title: 'Environment', stack_tools_title: 'Data tools', stack_system_title: 'Systems',
       svc1_t: 'Dashboards that show what to do next',
       svc1_d: 'Your raw data becomes three or four readable screens. Not a gallery of charts: the numbers that trigger a decision up front, everything else one click away.',
       svc2_t: 'Clean, current data every morning',
@@ -114,7 +122,7 @@
 
     de: {
       _title: 'Lona Dotcom — Freiberuflicher Datenanalyst | Rufen Sie mich an',
-      nav_services: 'Leistungen', nav_method: 'Ablauf', nav_about: 'Über mich',
+      nav_services: 'Leistungen', nav_stack: 'Stack', nav_method: 'Ablauf', nav_about: 'Über mich',
       cta_short: 'Anrufen', cta_mail: 'Nachricht schreiben',
       hero_l1: 'Ihre Zahlen wissen längst, was zu tun ist.',
       hero_l2: 'Man muss sie nur lesen können.',
@@ -129,6 +137,10 @@
       fact_4: 'Ein bis zwei Stunden vor Paris: ich arbeite täglich mit Europa.',
       work_title: 'Was ich konkret für Sie tue',
       work_lead: 'Sechs Wege zum Problem. Die meisten Projekte kombinieren zwei oder drei davon.',
+      stack_eyebrow: 'Meine Arbeitsumgebung',
+      stack_title: 'Ein Werkzeugkasten, der Daten in Entscheidungen verwandelt.',
+      stack_lead: 'Ergänzende Werkzeuge für zuverlässige, reproduzierbare Analysen, die sich einfach übergeben lassen.',
+      stack_env_title: 'Umgebung', stack_tools_title: 'Datenwerkzeuge', stack_system_title: 'Systeme',
       svc1_t: 'Dashboards, die sofort zeigen, was zu tun ist',
       svc1_d: 'Aus Rohdaten werden drei oder vier lesbare Ansichten. Keine Diagrammgalerie: die entscheidungsrelevanten Zahlen nach vorn, alles andere einen Klick entfernt.',
       svc2_t: 'Saubere, aktuelle Daten an jedem Morgen',

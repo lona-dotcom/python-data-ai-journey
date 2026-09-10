@@ -336,6 +336,86 @@ p:last-child { margin-bottom: 0; }
   border: 1px solid var(--rule); border-radius: 999px; padding: .22rem .62rem;
 }
 
+/* ---------- Stack : outils visibles, regroupés par usage ---------- */
+
+.stack { border-top: 1px solid var(--rule); }
+.stack__intro {
+  display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(16rem, .9fr);
+  gap: clamp(1.5rem, 5vw, 5rem); align-items: end; margin-bottom: 2.6rem;
+}
+.stack__intro .section-lead { margin: 0; max-width: 38ch; }
+.eyebrow {
+  margin: 0 0 .75rem; color: var(--signal); font-size: .76rem;
+  font-weight: 700; letter-spacing: .12em; text-transform: uppercase;
+}
+.stack__intro .h2 { margin-bottom: 0; max-width: 24ch; }
+.stack__groups { display: grid; gap: 2.3rem; }
+.stack-group__title {
+  display: flex; align-items: center; gap: .7rem; color: var(--chalk-dim);
+  font-family: var(--f-text); font-size: .78rem; font-weight: 700;
+  letter-spacing: .12em; line-height: 1; text-transform: uppercase; margin-bottom: .9rem;
+}
+.stack-group__title::after { content: ""; height: 1px; flex: 1; background: var(--rule); }
+.stack-grid {
+  display: grid; grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: .65rem;
+}
+.stack-grid--environment { grid-template-columns: repeat(5, minmax(0, 1fr)); }
+.stack-grid--system { grid-template-columns: repeat(2, minmax(0, 1fr)); max-width: 25rem; }
+.stack-item {
+  min-height: 7.6rem; padding: 1.05rem .7rem .85rem;
+  display: flex; flex-direction: column; align-items: center; justify-content: space-between;
+  gap: .7rem; border: 1px solid var(--rule); border-radius: 12px;
+  background: linear-gradient(145deg, rgba(233,239,236,.065), rgba(233,239,236,.018));
+  color: var(--chalk); text-align: center;
+  transition: transform .18s ease, border-color .18s ease, background .18s ease;
+}
+.stack-item:hover { transform: translateY(-4px); border-color: rgba(255,184,77,.58); background: var(--surface); }
+.stack-item img {
+  width: 2.35rem; height: 2.35rem; object-fit: contain;
+  padding: 0; border-radius: 9px;
+}
+.stack-item--jupyter img {
+  filter: brightness(0) saturate(100%) invert(54%) sepia(93%) saturate(1812%) hue-rotate(350deg) brightness(101%) contrast(101%);
+}
+.stack-item--git img {
+  filter: brightness(0) saturate(100%) invert(38%) sepia(94%) saturate(1777%) hue-rotate(344deg) brightness(99%) contrast(91%);
+}
+.stack-item--github img { filter: brightness(0) saturate(100%) invert(94%) sepia(8%) saturate(101%) hue-rotate(101deg) brightness(99%) contrast(96%); }
+.stack-item--docker img {
+  filter: brightness(0) saturate(100%) invert(51%) sepia(89%) saturate(1865%) hue-rotate(177deg) brightness(95%) contrast(91%);
+}
+.stack-item--python img {
+  filter: brightness(0) saturate(100%) invert(40%) sepia(22%) saturate(1477%) hue-rotate(169deg) brightness(89%) contrast(91%);
+}
+.stack-item--pandas img {
+  filter: brightness(0) saturate(100%) invert(13%) sepia(34%) saturate(2890%) hue-rotate(242deg) brightness(145%) contrast(111%);
+}
+.stack-item--numpy img {
+  filter: brightness(0) saturate(100%) invert(16%) sepia(29%) saturate(1197%) hue-rotate(151deg) brightness(145%) contrast(103%);
+}
+.stack-item--postgres img {
+  filter: brightness(0) saturate(100%) invert(34%) sepia(89%) saturate(1117%) hue-rotate(202deg) brightness(94%) contrast(91%);
+}
+.stack-item--duckdb img {
+  filter: brightness(0) saturate(100%) invert(83%) sepia(99%) saturate(1024%) hue-rotate(2deg) brightness(104%) contrast(104%);
+}
+.stack-item--linux img {
+  filter: brightness(0) saturate(100%) invert(81%) sepia(94%) saturate(1111%) hue-rotate(2deg) brightness(104%) contrast(103%);
+}
+.stack-item > span:last-child { font-size: .8rem; font-weight: 600; line-height: 1.15; }
+.stack-item__monogram {
+  width: 2.35rem; height: 2.35rem; display: grid; place-items: center;
+  border-radius: 8px; background: var(--mark-color); color: var(--on-signal);
+  font-size: .7rem; font-weight: 800; letter-spacing: -.04em;
+}
+.stack-item--powerbi .stack-item__monogram { --mark-color: #F2C811; }
+.stack-item--dax .stack-item__monogram { --mark-color: #E88C2D; }
+.stack-item--excel .stack-item__monogram { --mark-color: #217346; }
+.stack-item--query .stack-item__monogram { --mark-color: #6CC04A; }
+.stack-item--pivot .stack-item__monogram { --mark-color: #217346; }
+.stack-item--windows img, .stack-item--linux img { width: 3.15rem; height: 3.15rem; }
+
 /* ---------- Méthode : vraie séquence, donc numérotée ---------- */
 
 .steps {
@@ -470,6 +550,8 @@ p:last-child { margin-bottom: 0; }
   .panels { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .about__grid { grid-template-columns: 1fr; }
   .facts__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .stack-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  .stack-grid--environment { grid-template-columns: repeat(5, minmax(0, 1fr)); }
   .topnav { display: none; }
 }
 
@@ -480,6 +562,8 @@ p:last-child { margin-bottom: 0; }
   .panels { grid-template-columns: 1fr; border-radius: 18px; }
   .panel--lead { grid-column: span 1; }
   .steps { grid-template-columns: 1fr; gap: 2rem; }
+  .stack__intro { grid-template-columns: 1fr; gap: .8rem; margin-bottom: 2rem; }
+  .stack-grid, .stack-grid--environment { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   .callbar { display: flex; }
   .topbar__end .btn--call { display: none; }
   body { padding-bottom: 4.6rem; }
@@ -490,6 +574,7 @@ p:last-child { margin-bottom: 0; }
 @media (max-width: 420px) {
   .facts__grid { grid-template-columns: 1fr; gap: 1.4rem; }
   .phone { padding: 1.3rem 1.1rem; }
+  .stack-grid, .stack-grid--environment { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 
 /* ---------- Le seul moment de mise en scène : l'arrivée sur la page ---------- */
