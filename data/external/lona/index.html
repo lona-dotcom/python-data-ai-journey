@@ -82,6 +82,21 @@
     <div class="rail__body hero__grid">
 
       <div class="hero__text">
+        <div class="hero__about" id="apropos">
+          <p class="eyebrow" data-i18n="about_eyebrow">À propos</p>
+          <h2 class="h2" data-i18n="about_title">Qui vous aurez au bout du fil</h2>
+          <p data-i18n="about_p1">
+            Je m’appelle Lovatahiana Razanakoto — Lona. Data Analyst freelance depuis 2024, je travaille
+            depuis Tamatave, sur la côte est de Madagascar, avec des clients en France, en Allemagne
+            et au Royaume-Uni.
+          </p>
+          <p data-i18n="about_p2">
+            Je prends la donnée du début à la fin : la collecte, le nettoyage, l’analyse exploratoire,
+            la modélisation, le tableau de bord, puis la prise en main par l’équipe qui s’en servira.
+            Mes outils quotidiens sont Python, SQL, PostgreSQL, Power BI, Tableau et Excel.
+          </p>
+        </div>
+
         <h1 class="hero__title">
           <span data-i18n="hero_l1">Vos chiffres savent déjà quoi faire.</span>
           <span class="tail" data-i18n="hero_l2">Reste à les faire parler.</span>
@@ -122,12 +137,33 @@
         </p>
       </div>
 
-      <figure class="hero__portrait">
-        <img src="assets/lona.jpeg" alt="Portrait de Lovatahiana Razanakoto, Data Analyst freelance" width="960" height="1280" />
+      <figure class="hero__portrait" aria-label="Galerie de projets et d'expertise data">
+        <img class="portrait-gallery__portrait" src="assets/lona.jpeg" alt="Portrait de Lovatahiana Razanakoto, Data Analyst freelance" width="960" height="1280" />
         <figcaption>
-          <strong>Lovatahiana Razanakoto</strong>
+          <strong>Lovatahiana RAZANAKOTO</strong>
           <span data-i18n="portrait_cap">Data Analyst freelance, Tamatave, Madagascar</span>
         </figcaption>
+        <div class="portrait-gallery" data-gallery aria-label="Projets et expertise data">
+          <span class="portrait-gallery__label">DATA / EXPERTISE</span>
+          <div class="portrait-gallery__slides">
+            <img class="portrait-gallery__slide is-active" src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=960&h=1200&q=85" alt="Tableau de bord avec graphiques d'analyse de données" width="960" height="1200" />
+            <img class="portrait-gallery__slide" src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=960&h=1200&q=85" alt="Ordinateur affichant des indicateurs et un tableau de bord" width="960" height="1200" loading="lazy" />
+            <img class="portrait-gallery__slide" src="https://images.unsplash.com/photo-1518186285589-2f7649de83e0?auto=format&fit=crop&w=960&h=1200&q=85" alt="Visualisation de données sur un écran" width="960" height="1200" loading="lazy" />
+            <img class="portrait-gallery__slide" src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=960&h=1200&q=85" alt="Équipe en réunion autour d'une analyse" width="960" height="1200" loading="lazy" />
+            <img class="portrait-gallery__slide" src="https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=960&h=1200&q=85" alt="Professionnelle travaillant sur une stratégie data" width="960" height="1200" loading="lazy" />
+          </div>
+          <div class="portrait-gallery__controls" aria-label="Contrôles de la galerie">
+            <button type="button" class="portrait-gallery__button" data-gallery-prev aria-label="Image précédente">←</button>
+            <div class="portrait-gallery__dots" role="tablist" aria-label="Images de la galerie">
+              <button type="button" class="is-active" data-gallery-dot="0" role="tab" aria-label="Afficher l'image 1" aria-selected="true"></button>
+              <button type="button" data-gallery-dot="1" role="tab" aria-label="Afficher l'image 2" aria-selected="false"></button>
+              <button type="button" data-gallery-dot="2" role="tab" aria-label="Afficher l'image 3" aria-selected="false"></button>
+              <button type="button" data-gallery-dot="3" role="tab" aria-label="Afficher l'image 4" aria-selected="false"></button>
+              <button type="button" data-gallery-dot="4" role="tab" aria-label="Afficher l'image 5" aria-selected="false"></button>
+            </div>
+            <button type="button" class="portrait-gallery__button" data-gallery-next aria-label="Image suivante">→</button>
+          </div>
+        </div>
       </figure>
 
     </div>
@@ -318,21 +354,10 @@
   </section>
 
   <!-- ═══ À PROPOS ═══ -->
-  <section class="rail about" id="apropos">
+  <section class="rail about" id="apropos-suite">
     <div class="rail__mark" aria-hidden="true"></div>
     <div class="rail__body about__grid">
       <div>
-        <h2 class="h2" data-i18n="about_title">Qui vous aurez au bout du fil</h2>
-        <p data-i18n="about_p1">
-          Je m’appelle Lovatahiana Razanakoto — Lona. Data Analyst freelance depuis 2024, je travaille
-          depuis Tamatave, sur la côte est de Madagascar, avec des clients en France, en Allemagne
-          et au Royaume-Uni.
-        </p>
-        <p data-i18n="about_p2">
-          Je prends la donnée du début à la fin : la collecte, le nettoyage, l’analyse exploratoire,
-          la modélisation, le tableau de bord, puis la prise en main par l’équipe qui s’en servira.
-          Mes outils quotidiens sont Python, SQL, PostgreSQL, Power BI, Tableau et Excel.
-        </p>
         <blockquote class="quote">
           <p data-i18n="quote">Les données ne sont que des reflets de la réalité. À vous de les interpréter pour créer de la valeur.</p>
         </blockquote>
@@ -352,6 +377,7 @@
   <!-- ═══ APPEL FINAL — le rail s'arrête ici, exprès ═══ -->
   <section class="callout" id="contact">
     <div class="callout__in">
+      <p class="callout__eyebrow" data-i18n="contact_eyebrow">CONTACTS</p>
       <h2 class="callout__title" data-i18n="final_title">
         Quinze minutes au téléphone, et vous saurez si je peux vous aider.
       </h2>
@@ -363,10 +389,39 @@
       <p class="callout__note" data-i18n="final_note">
         Je décroche de 8 h à 20 h, heure de Madagascar (UTC+3). Si je suis en mission, je rappelle le jour même.
       </p>
-      <div class="callout__alt">
-        <!-- TEL -->
-        <a class="btn btn--dark" href="https://wa.me/261349458608" target="_blank" rel="noopener">WhatsApp</a>
-        <a class="btn btn--dark" href="mailto:lonaloraz@gmail.com?subject=Projet%20data">lonaloraz@gmail.com</a>
+      <div class="contact-grid">
+        <a class="contact-card" href="https://wa.me/261349458608" target="_blank" rel="noopener">
+          <span class="contact-card__icon" aria-hidden="true"><img src="https://cdn.simpleicons.org/whatsapp/25D366" alt="" loading="lazy"></span>
+          <span><strong>WhatsApp</strong><small data-i18n="contact_whatsapp">Écrire directement</small></span>
+        </a>
+        <a class="contact-card" href="mailto:lonaloraz@gmail.com?subject=Projet%20data">
+          <span class="contact-card__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 5.5h18v13H3z" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="m3.6 6.2 8.4 6.3 8.4-6.3" fill="none" stroke="currentColor" stroke-width="1.8"/></svg></span>
+          <span><strong>lonaloraz@gmail.com</strong><small data-i18n="contact_email">Envoyer un message</small></span>
+        </a>
+        <div class="contact-card contact-card--static">
+          <span class="contact-card__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 21s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12Z" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="9" r="2.2" fill="none" stroke="currentColor" stroke-width="1.8"/></svg></span>
+          <span><strong>Tamatave, Madagascar</strong><small data-i18n="contact_location">UTC+3 · Télétravail mondial</small></span>
+        </div>
+        <a class="contact-card" href="https://www.linkedin.com/in/razanakoto-lovatahiana-nomenjanahary-4060aa2a6/" target="_blank" rel="noopener">
+          <span class="contact-card__icon" aria-hidden="true"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-original.svg" alt="" loading="lazy"></span>
+          <span><strong>LinkedIn</strong><small data-i18n="contact_linkedin">Voir mon profil</small></span>
+        </a>
+        <a class="contact-card" href="https://x.com/lonaloraz" target="_blank" rel="noopener">
+          <span class="contact-card__icon" aria-hidden="true"><img src="https://cdn.simpleicons.org/x/000000" alt="" loading="lazy"></span>
+          <span><strong>X</strong><small data-i18n="contact_x">Suivre mes actualités</small></span>
+        </a>
+        <a class="contact-card" href="https://www.facebook.com/profile.php?id=61570971295771" target="_blank" rel="noopener">
+          <span class="contact-card__icon" aria-hidden="true"><img src="https://cdn.simpleicons.org/facebook/1877F2" alt="" loading="lazy"></span>
+          <span><strong>Facebook</strong><small data-i18n="contact_facebook">Me retrouver en ligne</small></span>
+        </a>
+        <a class="contact-card" href="https://github.com/lona-dotcom" target="_blank" rel="noopener">
+          <span class="contact-card__icon" aria-hidden="true"><img src="https://cdn.simpleicons.org/github/181717" alt="" loading="lazy"></span>
+          <span><strong>GitHub</strong><small data-i18n="contact_github">Voir mes projets</small></span>
+        </a>
+        <a class="contact-card" href="https://www.upwork.com/" target="_blank" rel="noopener">
+          <span class="contact-card__icon" aria-hidden="true"><img src="https://cdn.simpleicons.org/upwork/14A800" alt="" loading="lazy"></span>
+          <span><strong>Upwork</strong><small data-i18n="contact_upwork">Collaborer avec moi</small></span>
+        </a>
       </div>
     </div>
   </section>
