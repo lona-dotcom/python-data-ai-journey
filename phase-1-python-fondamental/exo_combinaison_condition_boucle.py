@@ -12,3 +12,4 @@ for message in messages_utilisateur:
 # message 1: Horloge car il contient "heure"
 # message 2: calculatrice car il contient "calcul"
 # message 3: réponse directe du LLM car c'est autre que calcul et heure
+# IN: l'operateur "in" ici joue le role "contient" ou  "dans" le message. Il joue le role de condition
